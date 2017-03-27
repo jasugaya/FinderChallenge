@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Finder challenge</title>
+    <meta charset="utf-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Proxima+Nova" rel="stylesheet" type="text/css">
+    <script src="/vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <link href="/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/styles/index.css" rel="stylesheet">
+    <script src="/vendor/awesomplete/awesomplete.min.js"></script>
+    <link href="/vendor/awesomplete/awesomplete.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"> 
+          <h1 class="logo">Finder challenge</h1>
+        </div>
+        <div class="col-md-8">
+          <div class="search-container">
+            <form class="form-inline">
+              <div class="form-group">
+                <input class="form-control awesomplete" type="text" name="search-input" id="search-input" onkeyup="checkInput();autoComplete();">
+                <button class="btn btn-primary" type="submit" name="search-btn" id="search-btn" disabled="disabled">Buscar</button>
+                <button class="btn btn-success" type="submit" name="search-btn" id="search-btn">Guardar Busqueda</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <aside class="col-md-4"> 
+        <h3>Busquedas guardadas</h3><br>
+        <div class="list-saved" id="list-saved" name="list-saved"></div><br>
+        <h3>Categorias</h3><br>
+        <div class="list-category" id="list-category" name="list-category"></div><br>
+        <h3>Idiomas</h3><br>
+        <div class="list-languages" id="list-languages" name="list-languages"></div><br>
+        <h3>Presentacion</h3><br>
+        <div class="list-edition" id="list-edition" name="list-edition"></div><br>
+      </aside>
+      <content class="col-md-8">
+        <div class="container"></div>
+        <div class="list-result" id="list-result" name="list-result"></div><br>
+      </content>
+      <footer class="col-md-12">
+        <h4 class="center">Desarrollado por Jashimi Sugaya - Desafio Front End Junior</h4>
+      </footer>
+    </div>
+    <script src="/vendor/underscore/underscore-min.js"></script>
+    <script src="/scripts/global.js"></script>
+    <script src="/scripts/search-form.js"></script>
+    <script src="/scripts/search-load.js"></script>
+    <script src="/scripts/app.js"></script>
+  </body>
+</html>
