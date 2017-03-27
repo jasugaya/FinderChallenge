@@ -126,9 +126,9 @@ $(document).ready(function() {
                 
                 //alert(teaser);
 
-                html6+='<div class="col-md-4 pic">';
+                html6+='<div class="col-md-4">';
                 html6+= '<br/>';
-                html6+='<div class="thumbail"><img src="'+imagen+'" alt="'+title+'"></div>';
+                html6+='<div><img class="img-thumbnail" src="'+imagen+'" alt="'+title+'"></div>';
                 html6+='<div class="caption"><h4>'+title+'</h4></div>';
                 html6+='<p class="teaser">'+teaser+'</p>';
 
